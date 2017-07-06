@@ -3,17 +3,6 @@
     class NumberWordTest extends PHPUnit_Framework_TestCase
     {
 
-        function testNumberOnes()
-
-        {
-            $test_number_word = new NumberWord;
-            $input = "9";
-
-            $result = $test_number_word->oneToNine($input);
-
-            $this->assertEquals("nine", $result);
-        }
-
         function testStringLength()
         {
             $test_length_of_string = new NumberWord;
@@ -22,8 +11,40 @@
             $result = $test_length_of_string->stringLength($input);
 
             $this->assertEquals(3, $result);
-
         }
+        function testNumberOnes()
+
+        {
+            $test_number_word = new NumberWord;
+            $input = "1";
+
+            $result = $test_number_word->oneToNine($input);
+
+            $this->assertEquals("one", $result);
+        }
+
+        function testNumberTens()
+
+        {
+            $test_number_word = new NumberWord;
+            $input = "15";
+
+            $result = $test_number_word->tenToTwenty($input);
+
+            $this->assertEquals("fifteen", $result);
+        }
+
+        function testNumberTwenty()
+        {
+            $test_number_word = new NumberWord;
+            $input = "25";
+
+            $result = $test_number_word->twentyToNinety($input);
+
+            $this->assertEquals("twentyfive", $result);
+        }
+
+
 
 
 
