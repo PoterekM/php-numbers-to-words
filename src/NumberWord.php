@@ -7,31 +7,34 @@
         function stringLength($input)
         {
             $length_of_string = strlen($input);
+            if ($length_of_string == 1) {
+                $ones = $length_of_string;
+            }
             return $length_of_string;
         }
 
 
 
 
-        function oneToNine($input)
+        function oneToNine($ones)
         {
-            if ($input == "1") {
+            if ($ones == "1") {
                 return "one";
-            } elseif ($input == "2" ) {
+            } elseif ($ones == "2" ) {
                 return "two";
-            } elseif ($input == "3" ) {
+            } elseif ($ones == "3" ) {
                 return "three";
-            } elseif ($input == "4" ) {
+            } elseif ($ones == "4" ) {
                 return "four";
-            } elseif ($input == "5" ) {
+            } elseif ($ones == "5" ) {
                 return "five";
-            } elseif ($input == "6" ) {
+            } elseif ($ones == "6" ) {
                 return "six";
-            } elseif ($input == "7" ) {
+            } elseif ($ones == "7" ) {
                 return "seven";
-            } elseif ($input == "8" ) {
+            } elseif ($ones == "8" ) {
                 return "eight";
-            } elseif ($input == "9" ) {
+            } elseif ($ones == "9" ) {
                 return "nine";
             }
         }

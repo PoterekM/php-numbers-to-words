@@ -17,7 +17,7 @@
         function testStringLength()
         {
             $test_length_of_string = new NumberWord;
-            $input = "333";
+            $input = "666";
 
             $result = $test_length_of_string->stringLength($input);
 
