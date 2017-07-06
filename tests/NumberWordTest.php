@@ -9,7 +9,7 @@
             $test_number_word = new NumberWord;
             $input = "1";
 
-            $result = $test_number_word->NumberWord($input);
+            $result = $test_number_word->oneToNine($input);
 
             $this->assertEquals("one", $result);
         }
